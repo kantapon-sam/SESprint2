@@ -1,0 +1,26 @@
+
+<ons-page ng-controller='StudentController'>
+    <ons-toolbar onclick="ons.slidingMenu.setMainPage('club-club/clublist.html', {closeMenu: true})">
+        <div class="left">
+<ons-toolbar-button onclick="ons.slidingMenu.setMainPage('club-club/clublist.html', {closeMenu: true})"> <i class="fa fa-angle-left" style="font-size:32px; vertical-align:-6px;"></i>
+     ย้อนกลับ</ons-toolbar-button>
+
+        </div>
+        <div class="center">รายชื่อสมาชิก</div>
+    </ons-toolbar>
+	<p style="text-align: center; color: #3d74ff; padding-top: 5px; "ng-repeat="data in clubdetail">{{data.nameclub}}</p>
+    <ons-row style="background:#3d74ff;padding-top:5px;padding-bottom:5px;color:white">
+    <ons-col width="5%">ที่</ons-col>
+    <ons-col>รหัสนักศึกษา</ons-col>
+    <ons-col>ชื่อ</ons-col>
+    <ons-col>นามสกุล</ons-col>
+    <ons-col>สาขาวิชา</ons-col>
+  	</ons-row>
+  	<ons-row style="background:#25a6d9 ;padding-top:5px;padding-bottom:5px" ng-repeat = "data in datas">
+    <ons-col width="5%">{{$index+1}}</ons-col>
+    <ons-col>{{data.idStudent}}</ons-col>
+    <ons-col>{{data.firstname}}</ons-col>
+    <ons-col>{{data.surname}}</ons-col>
+    <ons-col>{{data.faculty}}</ons-col>
+  	</ons-row>
+</ons-page>

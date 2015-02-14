@@ -1,0 +1,15 @@
+<ons-page ng-controller="ProjectController">
+		<h4>จำนวนงบประมาณ</h4>		
+		<ul class="list">
+  			<li class="list__item" >
+    			<textarea ng-model="money" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="งบประมาณ"></textarea>
+  			</li>
+		</ul>
+		<br>
+		<button ng-click="addMoney()" class="button--large--cta" >Save</button><br>
+		<button class="button--large--cta" ng-click="ons.slidingMenu.toggleMenu()">Cancel</button>
+
+		<div style="text-align: center; padding-top: 15px">
+                <span style="font-weight: bold;">งบประมาณทั้งหมด {{price}} บาท</span>
+        </div>
+</ons-page>

@@ -1,0 +1,78 @@
+<ons-page class="center" ng-controller="StudentController">
+<meta charset="utf-8">
+<div class="navigation-bar">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="ons.slidingMenu.setMainPage('club-club/clublist.html', {closeMenu: true})">
+     <i class="fa fa-angle-left" style="font-size:32px; vertical-align:-6px;"></i>
+     ย้อนกลับ
+    </span>
+  </div>
+
+  <div class="navigation-bar__center" ng-repeat="data in clubdetail">
+    {{data.nameclub}}
+  </div>
+</div>
+
+
+
+<ul class="list list--inset" ng-repeat="data in clubdetail">
+  
+  <li class="list__header">
+   คำอธิบายชมรม
+  </li>
+  <li class="list__item">
+    {{data.description}} 
+  </li>
+  <li class="list__header">
+    สถานที่
+  </li>
+  <li class="list__item">
+    {{data.place}}
+  </li>
+  <li class="list__header">
+    อาจารย์ที่ปรึกษา
+  </li>
+  <li class="list__item">
+    {{data.advisor}}
+  </li>
+  <li class="list__header">
+    ประธาน
+  </li>
+  <li class="list__item">
+   {{data.name}}&nbsp{{data.lastName}}
+  </li>
+</ul>
+<br>
+
+	<button class="button button--large" margin-top: 30px;  ng-click="ons.slidingMenu.setMainPage('club-student/register.html', {closeMenu: true})">
+ 			สมัคร
+ 	</button>
+ 
+ <style>
+.list {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  margin-left: 0px;
+}
+.list__header {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+ background: #3dc5e0;
+}
+
+.list--inset {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+  border: 1px solid #ddd;
+ 
+  border-radius: 4px;
+  background-image: none;
+}
+</style>
+</ons-page>
+

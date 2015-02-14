@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<ons-page ng-controller="StudentController">
+<ons-toolbar >
+      <div class="left">
+      <ons-toolbar-button onclick="ons.slidingMenu.toggleMenu()">
+      <ons-icon icon="bars" style="color: #3d74ff"></ons-icon>
+      </ons-toolbar-button>
+      </div> 
+      <div class="center">เลือกชมรมที่จะประเมิน</div> 
+      <div class="right"></div>
+</ons-toolbar>
+<ul class="list list--inset" ng-repeat="data in datas1">
+  <li class="list__item list--inset__item list__item--chevron" ng-click="Rate(data.id)">
+    {{data.nameclub}}
+  </li>
+</ul>
+
+</ons-page>

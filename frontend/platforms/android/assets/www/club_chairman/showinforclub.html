@@ -1,0 +1,49 @@
+<ons-page ng-controller="ShowclubdetailController">
+      <ons-toolbar>
+
+        <div class="center">ข้อมูลชมรม</div>
+        <div class="right"><button style="color:white ;float: right;background:yellow" class="button" 
+          ng-click="editclub()">แก้ไข</button></div>
+      </ons-toolbar>
+	<ul class="list">
+  		<li class="list__header">
+  		  ชื่อชมรม
+ 	    </li>
+  		<li class="list__item">
+   		 {{datas.nameclub}} 
+  		</li>
+ 	    <li class="list__header">
+    	  เกี่ยวกับชมรม  
+  		</li>
+  		<li class="list__item">
+   		 {{datas.description}}  
+  		</li>
+ 	    <li class="list__header">
+  	      สถานที่ 
+ 	    </li>
+  		<li class="list__item">
+   		 {{datas.place}}       
+  		</li>
+      <li class="list__header">
+          อาจารย์ที่ปรึกษา
+      </li>
+      <li class="list__item">
+       {{datas.advisor}}       
+      </li>
+      <li class="list__header">
+          ประธานชมรม
+      </li>
+      <li class="list__item">
+       {{datas.name}}   {{datas.lastName}}         
+      </li>
+      <li class="list__header">
+          จำนวนที่รับ
+      </li>
+      <li class="list__item">
+       {{datas.amount}}       
+      </li>
+      
+
+	</ul>
+     
+    </ons-page>

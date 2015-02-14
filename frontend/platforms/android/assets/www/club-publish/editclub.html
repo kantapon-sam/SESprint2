@@ -1,0 +1,28 @@
+<ons-page ng-controller="ShowclubdetailController">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">แก้ไข</div>
+        <div class="right"><button style="color:white ;float: right;background:green" class="button" 
+         ng-click="editsaveclub()">บันทึก</button></div>
+      </ons-toolbar>
+	<ul class="list">
+    <li class="list__item">
+       <textarea ng-model="nameclub" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="ชื่อชมรม"></textarea>
+    </li>
+   <li class="list__item">
+       <textarea ng-model="description" class="textarea textarea--transparent" style="width:100%;height:100px;margin-top:4px;" placeholder="เกี่ยวกับชมรม"></textarea>
+    </li>
+    <li class="list__item">
+       <textarea ng-model="place" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="สถานที่"></textarea>
+    </li>
+    <li class="list__item">
+       <textarea ng-model="advisor" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="อาจารย์ที่ปรึกษา"></textarea>
+    </li>
+    <li class="list__item">
+       <textarea ng-model="chairman" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="ประธานชมรม"></textarea>
+    </li>
+    <li class="list__item">
+       <textarea ng-model="amount" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="จำนวนที่รับ"></textarea>
+    </li>
+  </ul>
+    </ons-page>

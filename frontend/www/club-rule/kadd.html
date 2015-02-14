@@ -1,0 +1,63 @@
+meta charset="utf-8">
+<style>
+	.kwan {
+		padding: 5px; 
+		font-size: 16px;
+	}
+	
+	.kwan-center {
+		text-align: center;
+		font-size: 16px;
+		height: 35px;
+	}
+</style>
+<ons-page ng-controller="RuleController">
+    <ons-toolbar> 
+      <div class="center"><b></b></div>
+      <div class="right">
+      	<ons-button ng-click="addData()"></ons-button>  
+      </div>
+    </ons-toolbar>
+
+	<ons-list>
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="position" placeholder="" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+    
+    <ons-list>
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="number" placeholder="" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+    
+    <ons-list>
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="code" placeholder="" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+    
+    <ons-list>  
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="qualification" placeholder="" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+    
+    <ons-list>
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="duty" placeholder="" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+    
+    <ons-list>
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="proviso" placeholder="" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+    
+    <ons-list>
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="retention" placeholder="" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+</ons-page>

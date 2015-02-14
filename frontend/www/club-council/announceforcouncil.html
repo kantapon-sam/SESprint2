@@ -1,0 +1,26 @@
+<ons-page ng-controller="CouncilController">
+<meta charset="utf-8">	
+<div class="navigation-bar">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height">
+     <ons-toolbar-button onclick="ons.slidingMenu.toggleMenu()"><ons-icon icon="bars" style="color: #3d74ff"></ons-icon>
+    </span>
+</div>
+
+  <div class="navigation-bar__center">
+    	ประกาศฝ่ายกิจกรรม
+  </div>
+
+  <div class="navigation-bar__right">
+    <span><ons-button ng-click = "ons.slidingMenu.setMainPage('club-council/editdate.html', {closeMenu: true})">แก้ไข</ons-button></span>
+  </div>
+</div>
+
+	<ons-list ng-repeat = "datas in datadates">
+          <ons-list-header>วันในการตั้งชมรมและสมัครชมรม</ons-list-header>
+          <ons-list-item>นักศึกษาสามารถสมัครชมรมได้ตั้งแต่วันที่ {{datas.dateToApply1}} ถึง วันที่  {{datas.dateToApply2}}</ons-list-item>
+          <ons-list-item>นักศึกษาสามารถตั้งชมรมได้ตั้งแต่วันที่ {{datas.dateToCreate1}} ถึง วันที่  {{datas.dateToCreate2}}</ons-list-item>      
+   </ons-list> 
+</ons-page>
+
+

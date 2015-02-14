@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<ons-page>
+    <ons-toolbar> 
+      <div class="center"><b>ลบ </b></div>
+      <div class="right">
+      	<ons-button>ยืนยัน</ons-button>  
+      </div>
+    </ons-toolbar>
+
+	<ons-list>
+        <ons-list-header>รายการ</ons-list-header>
+        <ons-list-item ng-repeat="a in [1 , 2, 3]">
+			<label class="checkbox">
+			  <input type="checkbox">
+			  <div class="checkbox__checkmark"></div>
+			  <span class="ons-checkbox-inner"></span>
+			  	กฎเกณฑ์เดิม {{a}}
+			</label>
+		</ons-list-item>
+	</ons-list>
+</ons-page>

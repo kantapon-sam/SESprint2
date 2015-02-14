@@ -1,0 +1,20 @@
+
+<ons-page ng-controller="ShowpublicController">
+      <ons-toolbar>
+        
+        <div class="center">ประกาศ</div>
+        
+      </ons-toolbar>
+   <ons-list-item  ng-repeat="data in datas" >
+    <ul class="list list--inset">
+        <li class="list__item"  >
+         &nbsp; {{data.publishsubscribe}} <button style="color:white ;float: left;background:green" class="button" 
+          ng-click="editpublic(data.id)">แก้ไข</button></div>
+        </li>
+    </ul>
+    </ons-list-item>
+     
+</ons-page>
+
+
+    

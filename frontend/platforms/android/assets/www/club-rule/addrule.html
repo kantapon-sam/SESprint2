@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<style>
+	.kwan {
+		padding: 5px; 
+		font-size: 16px;
+	}
+	
+	.kwan-center {
+		text-align: center;
+		font-size: 16px;
+		height: 35px;
+	}
+</style>
+<ons-page ng-controller="RuleController">
+    <ons-toolbar> 
+      <div class="center"><b>เพิ่มกฎเกณฑ์</b></div>
+      <div class="right">
+      	<ons-toolbar-button ng-click="addRule()">บันทึก</ons-toolbar-button>  
+      </div>
+    </ons-toolbar>
+
+	<ons-list>
+        <section style="padding: 8px">
+        	<input type="text" class="text-input " ng-model="name" placeholder="ชื่อกฎเกณฑ์การตั้งชมรม" style="display: block; width: 100%">
+      	</section>
+    </ons-list>
+    
+    <one-list>
+	 		<ons-list-item ng-repeat="data in datas">
+	 			{{data.name}}
+				<ons-button ng-click="deleteIdRule(data.id)" style="float: right" >ลบ</ons-button>
+			</ons-list-item>
+	</one-list>
+    
+
+</ons-page>

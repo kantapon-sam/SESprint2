@@ -1,0 +1,16 @@
+<ons-page ng-controller="UseMoneyProjectController">
+<ons-navigator var="myNav">
+	<div class="center">	
+		<button class="button button--outline" ng-click="ons.slidingMenu.setMainPage('club-UseMoney/page2.html', {closeMenu: true})">Insert</button>
+
+		<button class="button button--outline">Cancle</button><br>
+    </div>
+
+    <ons-list-item ng-repeat="data in datas">
+    <div class="navigation-bar">
+  <div class="navigation-bar__left"><h4>{{data.id}}. {{data.usemoney}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{data.money}} &nbsp;&nbsp;&nbsp;&nbsp; บาท</h4>
+</div>
+</div>
+	</ons-list-item>
+ </ons-navigator>
+ </ons-page>

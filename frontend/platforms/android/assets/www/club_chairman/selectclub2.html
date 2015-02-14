@@ -1,0 +1,54 @@
+<ons-page ng-controller="ProjectController">
+<meta charset="utf-8">	
+<div class="navigation-bar">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height">
+     <ons-toolbar-button onclick="ons.slidingMenu.toggleMenu()"><ons-icon icon="bars" style="color: #3d74ff"></ons-icon></ons-toolbar-button>
+    </span>
+  </div>
+ 
+
+  <div class="navigation-bar__center">
+    	รายชื่อชมรม
+  </div>
+</div>
+ 
+  <li class="list__item">
+    <input type="search" class="search-input" style="width: 100%; margin: 12px auto 6px auto;" placeholder="ค้นหาชมรม" ng-model="club">
+  </li>
+  
+	<ons-col>
+	</ons-col>
+
+	<ons-row class="row-content" ng-repeat="data in datas1 | filter:club" >
+	     
+	    <ons-col style="text-align:left;">
+	    <button class="button--quiet">
+	    	{{data.nameclub}}
+	    </button>
+	    </ons-col>
+	    
+	    <ons-col>
+ 			<button class="button button--large" style="background: blue" ng-click="MoneyClub2(data.id)">
+ 				ใส่รายการการใช้งบประมาณ
+ 			</button>
+	    </ons-col>
+	
+	</ons-row>
+ 
+	<style>
+		.row-head {
+			text-align:center;
+			background:#1284ff;
+			padding:20px;
+			color:white;
+			font-size:15px;
+		}
+		.row-content {
+			text-align:center;
+			background:#f9f9f9;
+			padding:20px;
+			font-size:18px
+		}
+	</style>
+</ons-page>

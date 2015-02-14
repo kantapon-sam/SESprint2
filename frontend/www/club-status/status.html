@@ -1,0 +1,23 @@
+
+    <ons-page class="center" ng-controller="AddController">
+       <ons-toolbar>
+            <div class="center">นัดหมายกิจกรรมชมรม</div>
+            <div class="right">
+         <ons-toolbar-button>
+              <ons-icon icon="ion-navicon" style="font-size: 32px; width: 1em" ng-click="alert()">
+          </ons-toolbar-button>
+        </div>
+      </ons-toolbar>
+       <br><br>
+      <div class="center">      
+    
+      <br>
+    <textarea class="textarea" cols="35" rows="5" placeholder="Comment" ng-model="msg"></textarea>
+       <br><br>
+    <button class="button button--large" ng-click="addData()">Post</button>
+          
+           <br>
+            <ons-button class="button button--large" ng-click="ons.slidingMenu.setMainPage('club-status/status2.html', {closeMenu: true})">นัดหมายกิจกรรม</ons-button> 
+          </div>  
+    </ons-page>
+

@@ -1,0 +1,38 @@
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<ons-page modifier="menu-page" ng-controller="MenuCtrl">
+	<ons-toolbar modifier="transparent">
+		<div class="center" style="color: #808080; font-weight: bold">
+			เมนูหลัก
+		</div>
+	</ons-toolbar>
+	  
+	<ons-list class="menu-list">
+		<ons-list-item class="menu-item" ng-click="ons.slidingMenu.setMainPage('/pages/views.html', {closeMenu: true})">
+			<i class="fa fa-home"></i>
+			หน้าแรก
+		</ons-list-item>
+		<ons-list-item class="menu-item" ng-click="ons.slidingMenu.setMainPage('club-publish/lookpublish.html', {closeMenu: true})">
+			<i class="fa fa-list-alt"></i>
+			News feed
+		</ons-list-item>
+		<ons-list-item class="menu-item" ng-click="ons.slidingMenu.setMainPage('club-rule/	showrule.html', {closeMenu: true})">
+			<i class="fa fa-list-ol"></i>
+			ดูกฎเกณฑ์การตั้งชมรม
+		</ons-list-item>
+		<ons-list-item class="menu-item" ng-click="ons.slidingMenu.setMainPage('club-council/announce.html', {closeMenu: true})">
+			<i class="fa fa-list-alt"></i>
+			ประกาศจากฝ่ายกิจกรรม
+		</ons-list-item>
+		<ons-list-item class="menu-item" ng-click="ons.slidingMenu.setMainPage('club-club/	clublist.html', {closeMenu: true})">
+			<i class="fa fa-list-alt"></i>
+			ดูรายชื่อชมรม
+		</ons-list-item>
+		<ons-list-item class="menu-item" ng-click="ons.slidingMenu.setMainPage('club-rate/selectrate.html', {closeMenu: true})">
+			<i class="fa fa-check"></i>
+			ประเมินชมรม
+		</ons-list-item>
+		
+	</ons-list>
+	<br>
+	
+</ons-page>

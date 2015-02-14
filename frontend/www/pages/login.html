@@ -1,0 +1,42 @@
+
+<ons-page ng-controller="LoginCtrl">
+ <div class="login-form">
+
+        <input type="text" class="text-input--underbar" id="username "ng-model="username"placeholder="Username" value="">
+        <input type="password" class="text-input--underbar" id="password" ng-model="pw" placeholder="Password" value="">
+        <br><br>
+        <ons-button modifier="large" class="login-button" ng-click="login()">Log In</ons-button>
+        <br><br>
+       
+      </div>
+      <style>
+.login-form {
+  text-align: center;
+  width: 80%;
+  margin: 60px auto 0;
+}
+
+input[type=text], input[type=password] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.login-button {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  display: block;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+
+}
+
+
+      </style>
+</ons-page>

@@ -1,0 +1,38 @@
+<ons-page ng-controller="AController" >
+      <ons-toolbar>
+        <div class="center">ข้อมูลสมาชิก</div>
+      </ons-toolbar>
+	<ul class="list" >
+  		<li class="list__header">
+  		  รหัสนักศึกษา
+ 	    </li>
+  		<li class="list__item" >
+   		 {{datas.idStudent}}
+  		</li>
+ 	    <li class="list__header">
+    	  ชื่อ นามสกุล
+  		</li>
+  		<li class="list__item">
+   		 {{datas.firstname}} {{datas.surname}}
+  		</li>
+  		<li class="list__header">
+   		 ชั้นปี
+  		</li>
+  		<li class="list__item">
+   		 {{datas.year}}
+  		</li>
+  		<li class="list__header">
+   		 สาขา
+  		</li>
+ 		 <li class="list__item">
+   		 {{datas.department}}
+  		</li>
+ 	    <li class="list__header">
+  		  สำนักวิชา
+  		</li>
+  		<li class="list__item">
+   		 {{datas.faculty}}
+  	    </li>
+	</ul>
+     
+    </ons-page>
