@@ -1,0 +1,46 @@
+ 
+   <ons-page ng-controller="PostController">
+    <ons-toolbar>
+        <div class="center">Event</div>
+        <div class="right">
+          <ons-toolbar-button><ons-icon icon="ion-gear-a" style="vertical-align: -4px; font-size: 28px;" ng-click="alert()"></ons-icon></ons-toolbar-button>
+        </div>
+     </ons-toolbar>
+<br><br>
+
+    <form name="myForm" >
+        <input type="date" id="exampleInput" name="input" ng-model="dates"
+           placeholder="yyyy-MM-dd" required />
+         <span class="error" ng-show="myForm.input.$error.required">
+             กรุณาใส่:วัน/เดือน/ปี</span>
+    </form>
+        <ons-list modifier="inset" style="margin-top: 10px" >
+          </ons-list-item>
+          <ons-list-item>
+          
+                <input type="text" class="text-input text-input--transparent" placeholder="Club" style="width: 100%" ng-model="club">
+                
+          </ons-list-item>
+          <ons-list-item>
+          
+                <textarea class="textarea textarea--transparent" placeholder="Message" style="width: 100%; height: 100px;" ng-model="message"></textarea>
+                
+          </ons-list-item>
+          </ons-list>
+          <div style="padding: 10px 9px">
+
+              <ons-button modifier="large" style="margin: 0 auto;" ng-click="addData()" modifier="tappable">
+                   Post
+              </ons-button>
+
+          </div>
+          <div style="padding: 10px 9px">
+
+              <ons-button modifier="large" style="margin: 0 auto;" ng-click="ons.slidingMenu.setMainPage('club-event/Event2.html', {closeMenu: true})">
+                   View
+              </ons-button>
+
+          </div>
+          
+   </ons-page>
+

@@ -1,0 +1,157 @@
+<meta charset="utf-8">  
+<ons-page ng-controller="RateController" >
+     <ons-toolbar >
+      <div class="left">
+      <ons-toolbar-button ng-click="ons.slidingMenu.setMainPage('club-rate/selectrate.html', {closeMenu: true})"> <i class="fa fa-angle-left" style="font-size:32px; vertical-align:-6px;"></i>
+     ย้อนกลับ</ons-toolbar-button>
+      </div> 
+      <div class="center" ng-repeat="data in NameClub">ประเมิน{{data.nameclub}}</div> 
+      <div class="right"></div>
+</ons-toolbar>
+
+    <ons-list>
+      
+        <ons-list-header></ons-list-header>
+          <ons-list-item><b>1. ความสะอาด</b></ons-list-item>
+          
+      <ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="one" ng-model="One" value="3">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+ 
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="one" ng-model="One" value="2">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="one" ng-model="One" value="1">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+      <ons-list-header></ons-list-header>
+
+    <ons-list-item><b>2. การพูด สื่อสาร ของประธานชมรม</b></ons-list-item>
+      <ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="two" ng-model="Two" value="3">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="two" ng-model="Two" value="2">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="two" ng-model="Two" value="1">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+    <ons-list-header></ons-list-header>
+ 
+        <ons-list-item><b>3. ชมรมมีการดูแลอย่างดี</b></ons-list-item>
+          <ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="three" ng-model="Three" value="3">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="three" ng-model="Three" value="2">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="three"  ng-model="Three" value="1">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+    <ons-list-header></ons-list-header>
+ 
+    <ons-list-item><b>4. กิจกรรมไม่น่าเบื่อ</b></ons-list-item>
+          <ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="four" ng-model="Four" value="3">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="four" ng-model="Four" value="2">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="four" ng-model="Four" value="1">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+    <ons-list-header></ons-list-header>
+ 
+    <ons-list-item><b>5. อัธยาศัยดี</b></ons-list-item>
+          <ons-row>
+        <ons-col>
+            <label class="radio-button">
+          <input type="radio" name="five" ng-model="Five" value="3">
+            <div class="radio-button__checkmark"></div>
+            ดี
+      </label>
+      </ons-col>
+      <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="five" ng-model="Five" value="2">
+            <div class="radio-button__checkmark"></div>
+          ปานกลาง
+      </label>
+      </ons-col>
+        <ons-col>
+      <label class="radio-button">
+          <input type="radio" name="five" ng-model="Five" value="1">
+            <div class="radio-button__checkmark"></div>
+            พอใช้
+      </label>
+      </ons-col>
+  </ons-row>
+    <ons-list-header></ons-list-header>
+    </ons-list>
+    <br>
+  <div style="text-align: center">
+ <ons-button ng-click="addRate()">ส่งผลการประเมิน</ons-button>
+ </div>
+
+
+    </ons-page>
+
+
+
+

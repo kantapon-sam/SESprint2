@@ -1,0 +1,22 @@
+	<ons-page ng-controller="UseMoneyProjectController">
+		 <h4>รายละเอียด</h4>		
+		<ul class="list">
+  			<li class="list__item" >
+    			<textarea ng-model="usemoney" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="รายการ"></textarea>
+  			</li>
+		</ul>
+
+		<h4>จำนวนเงิน</h4>		
+		<ul class="list">
+  			<li class="list__item" >
+    			<textarea ng-model="money" class="textarea textarea--transparent" style="width:100%;height:50px;margin-top:4px;" placeholder="จำนวนเงิน"></textarea>
+  			</li>
+		</ul>
+		<br>
+		<button ng-click="addUseMoney()" class="button--large--cta" >Save</button><br>
+		<button class="button--large--cta" ng-click="ons.slidingMenu.toggleMenu()">Cancel</button>
+
+		<div style="text-align: center; padding-top: 15px">
+                <span style="font-weight: bold;">งบประมาณที่เหลือ {{price}} บาท</span>
+        </div>
+</ons-page>

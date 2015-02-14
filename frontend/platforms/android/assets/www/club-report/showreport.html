@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<ons-page ng-controller="ReportController">
+<ons-navigator var="myNav">
+	
+	    <ons-toolbar>
+	      <div class="center"><b>ประกาศกิจกรรมชมรม</b></div>
+	    </ons-toolbar>
+	 	<one-list>
+	 		<ons-list-header>
+	 			ประกาศกิจกรรมชมรม
+	 		</ons-list-header>
+	 		<ons-list-item ng-repeat="data in datas">
+	 			{{$index + 1}}. {{data.name}}
+			</ons-list-item>
+	 	</one-list>
+	
+</ons-navigator>
+</ons-page>

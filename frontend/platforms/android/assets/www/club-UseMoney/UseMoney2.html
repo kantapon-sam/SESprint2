@@ -1,0 +1,16 @@
+<ons-page ng-controller="ProjectController">
+<meta charset="utf-8">
+<ons-navigator var="">
+	<center><h4>โครงการชมรมดนตรีสากล</h4></center>
+    <ul class="list">
+      <li class="list__item list__item--chevron" ng-repeat="data in datas1 | filter:club" >
+        {{data.nameclub}}
+      </li>
+    </ul>
+    <ons-col>
+      <button class="button button--large" style="background: blue" ng-click="UseMoney(data.id)">
+        ใช้งบประมาณ
+      </button>
+      </ons-col>
+  </ons-navigator>
+</ons-page>

@@ -1,0 +1,28 @@
+
+  <ons-page ng-controller="NonController">
+      <ons-toolbar>
+        <div class="center">รายชื่อสมาชิก</div>
+      </ons-toolbar>
+  <ons-list>
+    <ons-list-item  ng-repeat="data in datas" >
+      <div class="navigation-bar navigation-bar--android">
+        <div class="navigation-bar__left navigation-bar--android__left">
+            <span class="toolbar-button navigation-bar__line-height" style="padding:0 5px 0 0;"><i class="fa fa-user" 
+              style="font-size:20px;"></i></span>
+        </div>
+      <div class="navigation-bar__center navigation-bar--android__center">
+        {{data.firstname}} {{data.surname}}
+      </div>
+        <div class="navigation-bar__right navigation-bar--android__right">
+          <span class="toolbar-button--quiet navigation-bar__line-height"  ng-click="showdetailstudent(data.id)">
+            <i class="fa fa-search" style="font-size:20px;"></i>
+          </span>
+          <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="deletestudent(data.id)" >
+            <i class="fa fa-times-circle" style="font-size:20px;"></i>
+          </span>
+        </div>
+      </div>
+
+       </ons-list-item>
+  </ons-list>
+    </ons-page>

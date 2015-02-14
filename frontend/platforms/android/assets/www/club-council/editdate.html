@@ -1,0 +1,41 @@
+<ons-page ng-controller="CouncilController">
+<meta charset="utf-8">	
+<div class="navigation-bar">
+  <div class="navigation-bar__left">
+    <span class="toolbar-button--quiet navigation-bar__line-height" >
+     <ons-back-button ng-click="ons.slidingMenu.setMainPage('club-council/announce.html', {closeMenu: true})">กลับ</ons-back-button>
+    </span>
+</div>
+
+  <div class="navigation-bar__center">
+    	แก้ไข
+  </div>
+
+  <div class="navigation-bar__right">
+    <span><ons-button ng-click = "editsavedate()">บันทึก</ons-button></span>
+  </div>
+</div>
+	<ons-list>
+          <ons-list-header>วันเริ่มต้นการสมัคร</ons-list-header>
+          <ons-list-item>
+          <input type="date" ng-model="datetoapply1" class="text-input text-input--transparent" style="width:100%; margin-top:4px;"></input>
+          </ons-list-item>
+          <ons-list-header>วันสิ้นสุดการสมัคร</ons-list-header>
+          <ons-list-item>
+          <input type="date" ng-model="datetoapply2" class="text-input text-input--transparent" style="width:100%; margin-top:4px;"></input>
+          </ons-list-item>
+          <ons-list-header>วันเริ่มต้นการตั้งชมรม</ons-list-header>
+          <ons-list-item>
+          <input type="date" ng-model="datetocreate1" class="text-input text-input--transparent" style="width:100%; margin-top:4px;"></input>
+          </ons-list-item>
+           <ons-list-header>วันสิ้นสุดการตั้งชมรม</ons-list-header>
+          <ons-list-item>
+          <input type="date" ng-model="datetocreate2" class="text-input text-input--transparent" style="width:100%; margin-top:4px;"></input>
+          </ons-list-item>
+          
+          
+   </ons-list>
+	
+</ons-page>
+
+

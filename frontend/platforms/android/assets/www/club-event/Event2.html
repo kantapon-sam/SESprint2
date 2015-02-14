@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<ons-page ng-controller="ShowController">
+
+<ons-toolbar>
+        <div class="left"></div>
+        <div class="center">Events</div>
+      </ons-toolbar>
+      <br> 
+    <ons-list>
+  <ons-list-item class="item" ng-repeat="data in datas" ng-click="AiData(data.id)">
+      <p>{{data.club}}</p>
+  </ons-list-item>
+  </ons-list>
+</ons-page>

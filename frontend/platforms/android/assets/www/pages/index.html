@@ -1,0 +1,29 @@
+<ons-page >
+	<ons-toolbar>
+		<div class="center"><b>ยินดีต้อนรับ</b></div>
+		<div class="right" ng-controller="MenuCtrl">
+			<ons-toolbar-button ng-click="gotoPage('login')">
+				<b>Login</b>
+			</ons-toolbar-button>
+		</div>
+	</ons-toolbar>
+
+	<div style="text-align: center;">
+		<img src="img/attachment.jpg" class="profile-image" >
+	</div>
+
+	<style>
+.profile-image {
+	
+	margin-top: 50px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: black;
+  border 1px solid white;
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+	</style>
+</ons-page>

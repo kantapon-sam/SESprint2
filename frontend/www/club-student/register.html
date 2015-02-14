@@ -1,0 +1,38 @@
+<ons-navigator animation="slide" var="app.navi">
+<ons-page ng-controller='StudentController'>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="ons.slidingMenu.toggleMenu()"><ons-icon icon="bars" style="color: #3d74ff"></ons-icon></ons-toolbar-button>
+      </div>
+      <div class="center">สมัครชมรม</div>
+    </ons-toolbar>
+    <p style="text-align: center; color: #3d74ff; padding-top: 5px;" ng-repeat="datas in clubdetail">{{datas.nameclub}}</p>
+    <ul class="list">
+    <li class="list__item">
+    <input type="text" ng-model="idStudent" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="รหัสนักศึกษา">
+  	</li>
+  	<li class="list__item">
+    <input type="text" ng-model="firstname" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="ชื่อ">
+  	</li>
+  	<li class="list__item">
+    <input type="text" ng-model="surname" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="นามสกุล">
+  	</li>
+  	<li class="list__item">
+    <input type="text" ng-model="year" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="ชั้นปี">
+  	</li>
+  	<li class="list__item">
+    <input type="text" ng-model="faculty" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="สำนักวิชา">
+  	</li>
+  	<li class="list__item">
+    <input type="text" ng-model="department" class="text-input text-input--transparent" style="width:100%; margin-top:4px;" placeholder="สาขาวิชา">
+  	</li>
+	</ul>
+	
+	</br>
+	<ons-button modifier="large" ng-click="addStudent()">สมัคร</ons-button>	
+	</br>
+	<ons-button modifier="large" ng-click="ons.slidingMenu.setMainPage('club-student/studentlist.html', {closeMenu: true})">ดูรายชื่อสมาชิกชมรม</ons-button>	
+	</br>
+	
+</ons-page>
+</ons-navigator>

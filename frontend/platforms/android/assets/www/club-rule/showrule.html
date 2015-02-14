@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<ons-navigator var="myNav">
+	<ons-page ng-controller="RuleController">
+	    <ons-toolbar>
+	      <div class="center"><b>กฎเกณฑ์การตั้งชมรม</b></div>
+	    </ons-toolbar>
+	 	<one-list>
+	 		<ons-list-header>
+	 			กฎเกณฑ์การตั้งชมรม
+	 		</ons-list-header>
+	 		<ons-list-item ng-repeat="data in datas">
+	 			{{$index + 1}}. {{data.name}}
+			</ons-list-item>
+	 	</one-list>
+	</ons-page>
+</ons-navigator>

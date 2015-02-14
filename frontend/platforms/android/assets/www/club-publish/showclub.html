@@ -1,0 +1,30 @@
+
+  <ons-page ng-controller="ShowclubController">
+      <ons-toolbar>
+        
+        <div class="center">รายชื่อชมรม</div>
+        <div class="right"><button style="color:white ;float: right;background:blue" class="button" 
+          ng-click="ons.slidingMenu.setMainPage('club-publish/createclub2.html', {closeMenu: true});">สร้าง</button></div>
+      </ons-toolbar>
+
+    <ons-list-item  ng-repeat="data in datas" >
+    <div class="navigation-bar navigation-bar--android">
+        <div class="navigation-bar__left navigation-bar--android__left">
+            <span class="toolbar-button navigation-bar__line-height" style="padding:0 5px 0 0;"><i class="fa fa-university" 
+              style="font-size:20px;"></i></span>
+        </div>
+      <div class="navigation-bar__center navigation-bar--android__center">
+        {{data.nameclub}} 
+      </div>
+        <div class="navigation-bar__right navigation-bar--android__right">
+          <span class="toolbar-button--quiet navigation-bar__line-height"  ng-click="createclub(data.id)">
+            <i class="fa fa-cogs" style="font-size:20px;"></i>
+          </span>
+          <span class="toolbar-button--quiet navigation-bar__line-height" ng-click="deleteclub(data.id)" >
+            <i class="fa fa-times-circle" style="font-size:20px;"></i>
+          </span>
+        </div>
+      </div>
+    </ons-list-item>
+
+    </ons-page>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>My App</title>  
+  
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+  <link rel="stylesheet" href="lib/onsen/css/topcoat-mobile-onsen-ios7.css">    
+  <link rel="stylesheet" href="styles/app.css"/>
+  <link rel="stylesheet" href="styles/onsen-css-components.css"/>
+  <link rel="stylesheet" href="styles/onsen-css-components.min.css"/>
+
+  <script src="lib/onsen/js/angular/angular.js"></script>    
+  <script src="lib/onsen/js/onsenui.js"></script>    
+  <script src="js/app.js"></script> 
+  <script type="text/javascript" src="cordova.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script type="text/javascript">
+      sys.initialize();
+  </script>
+  
+</head>
+
+<body>    
+  
+  <ons-screen>
+    <ons-navigator title="">        
+
+        <div class="center">
+          <h3>รายชื่อชมรม</h3> 
+        <ul class="list list--inset">
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            1.ชมรมดนตรีสากล
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            2.ชมรมคอมพิวเตอร์
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            3.ชมรมเพื่อนเกษตร
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            4.ชมรมดนตรีและนาฎศิลไทย
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            5.ชมรมศิลปะการแสดง
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            6.ชมรมศิลปะการถ่ายภาพ
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            7.ชมรมโครงสร้างและเทคโนโลยี
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            8.ชมรม Linux
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            9.ชมรมบาสเก็ตบอล
+          </li>
+
+          <li class="list__item list--inset__item list__item--chevron" ng-click="ons.navigator.pushPage('AddMoney.html')">
+            10.ชมรมฟุตบอล
+          </li>
+        </ul>
+
+
+      <div class="tab-bar">
+        <label class="tab-bar__item">
+          <input type="radio" name="tab-bar-c" checked="checked">
+            <button class="tab-bar__button">
+              <div class="tab-bar__label">One</div>
+            </button>
+        </label>
+
+        <label class="tab-bar__item">
+          <input type="radio" name="tab-bar-c">
+            <button class="tab-bar__button">
+             <div class="tab-bar__label">Two</div>
+            </button>
+        </label>
+
+        <label class="tab-bar__item">
+          <input type="radio" name="tab-bar-c">
+            <button class="tab-bar__button">
+              <div class="tab-bar__label">Three</div>
+            </button>
+        </label>
+      </div>
+
+    </ons-navigator>
+  </ons-screen>
+ 
+</body>
+</html>
